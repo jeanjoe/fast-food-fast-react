@@ -1,4 +1,7 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Maintainability](https://api.codeclimate.com/v1/badges/2e1adb3fc21a14275961/maintainability)](https://codeclimate.com/github/jeanjoe/fast-food-fast-react/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/2e1adb3fc21a14275961/test_coverage)](https://codeclimate.com/github/jeanjoe/fast-food-fast-react/test_coverage)
+
+#FAST FOOD FAST REACT.
 
 ## Available Scripts
 
