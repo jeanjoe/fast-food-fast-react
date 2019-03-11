@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { registerUser } from "../../actions/authAction";
 import { connect } from "react-redux";
 import SignUpForm from "./SignUpForm";
+import { Container, Segment, Grid } from "semantic-ui-react";
 
 export class SignUp extends Component {
   constructor(props) {
@@ -82,14 +83,22 @@ export class SignUp extends Component {
   render() {
     const { passwordError, allError, loading, registerSuccess } = this.state;
     return (
-      <SignUpForm
-        handleSubmit={this.handleSubmit}
-        handleOnChange={this.handleOnChange}
-        passwordError={passwordError}
-        allError={allError}
-        loading={loading}
-        registerSuccess={registerSuccess}
-      />
+      <Container>
+        <Grid centered stackable>
+          <Grid.Column width={6}>
+            <Segment style={{ margin: "5em 0em", padding: "2em 1em" }}>
+              <SignUpForm
+                handleSubmit={this.handleSubmit}
+                handleOnChange={this.handleOnChange}
+                passwordError={passwordError}
+                allError={allError}
+                loading={loading}
+                registerSuccess={registerSuccess}
+              />
+            </Segment>
+          </Grid.Column>
+        </Grid>
+      </Container>
     );
   }
 }

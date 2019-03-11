@@ -27,7 +27,7 @@ export class Navbar extends Component {
             </Menu.Item>
 
             <Menu.Item>
-              <Button>
+              <Button as={Link} to='/sign-in'>
                 <Icon name="sign in alternate" /> Log-in
               </Button>
             </Menu.Item>
