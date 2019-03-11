@@ -15,10 +15,10 @@ export class Footer extends Component {
                   <List.Item as={Link} to="/">
                     Home
                   </List.Item>
-                  <List.Item>
+                  <List.Item as={Link} to="/sign-up">
                     Sign Up
                   </List.Item>
-                  <List.Item>
+                  <List.Item as={Link} to="/sign-in">
                     Sign in
                   </List.Item>
                 </List>
