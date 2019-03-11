@@ -1,4 +1,5 @@
 import axios from "axios";
+import { GET_USER_MENU, GET_USER_MENU_ERROR } from "../utilities/actionTypes";
 const baseUrl = "https://manzede-fast-food-fast-3.herokuapp.com/api/v1/users/";
 
 export const registerUser = data => dispatch => {
@@ -39,6 +40,31 @@ export const loginUser = data => dispatch => {
     .catch(error => {
       dispatch({
         type: "LOGIN_USER_ERROR",
+        payload: error
+      });
+    });
+};
+
+const token = localStorage.getItem("auth_token");
+// const url = "https://manzede-fast-food-fast-3.herokuapp.com/api/v1/";
+
+export const getMenus = () => dispatch => {
+  axios
+    .get(`${baseUrl}users/menus`, {
+      headers: {
+        "Content-type": "application/json",
+        Authorization: `Bearer ${token}`
+      }
+    })
+    .then(response => {
+      dispatch({
+        type: GET_USER_MENU,
+        payload: response.data
+      });
+    })
+    .catch(error => {
+      dispatch({
+        type: GET_USER_MENU_ERROR,
         payload: error
       });
     });

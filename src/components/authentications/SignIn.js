@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { loginUser } from "../../actions/authAction";
+import { getMenus } from '../../actions/menuActions';
 import { connect } from "react-redux";
 import SignInForm from "./SignInForm";
 import { Container, Segment, Grid } from "semantic-ui-react";
@@ -13,6 +14,10 @@ export class SignIn extends Component {
       loginError: null,
       loading: false
     };
+  }
+
+  componentDidMount () {
+    console.log(this.props);
   }
 
   handleSubmit = () => {
@@ -39,8 +44,9 @@ export class SignIn extends Component {
         loginSuccess: "Login successful, Redirecting you..."
       });
       localStorage.setItem("auth_token", nextProps.user.user_token);
-      setInterval(this.props.history.push("/"), 5000);
-    } else if (nextProps.error.response.data) {
+      window.location.href = "/";
+    }
+    if (nextProps.error.response) {
       this.setState({
         loginError: nextProps.error.response.data
       });
@@ -74,5 +80,5 @@ const mapStateToProps = state => ({
 });
 export default connect(
   mapStateToProps,
-  { loginUser }
+  { loginUser, getMenus }
 )(SignIn);

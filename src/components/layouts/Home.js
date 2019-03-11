@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import bannerImage from "../../assets/images/3a51b4c300bacca9d6ad7d22ef3b0ba6.png";
+import { Link } from 'react-router-dom';
 import {
   Container,
   Button,
@@ -39,7 +40,7 @@ export class Home extends Component {
               </Grid.Row>
               <Grid.Row>
                 <Grid.Column textAlign="center">
-                  <Button size="huge" color="red">
+                  <Button size="medium" color="red" as={Link} to="/menus" >
                     Place your Order
                   </Button>
                 </Grid.Column>
