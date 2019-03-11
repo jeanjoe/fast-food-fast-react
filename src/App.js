@@ -1,18 +1,20 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component, Fragment } from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Navbar from "./components/layouts/Navbar";
+import Home from "./components/layouts/Home";
+import Footer from "./components/layouts/Footer";
 
 class App extends Component {
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            FAST FOOD FAST APP.
-          </p>
-        </header>
-      </div>
+      <Router>
+        <Fragment>
+          <Navbar />
+          <Route exact path="/" component={Home} />
+          <Footer />
+        </Fragment>
+      </Router>
     );
   }
 }
