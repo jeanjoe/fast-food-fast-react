@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import {
   Item,
   Button,
@@ -71,5 +72,12 @@ const MenuItem = ({
     </Item>
   );
 };
+
+MenuItem.propTypes = {
+  handleLocation: PropTypes.func.isRequired,
+  handleOnChange: PropTypes.func.isRequired,
+  handleSubmit: PropTypes.func.isRequired,
+  menu: PropTypes.instanceOf(Object).isRequired,
+}
 
 export default MenuItem;

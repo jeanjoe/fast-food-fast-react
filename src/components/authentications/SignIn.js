@@ -16,10 +16,6 @@ export class SignIn extends Component {
     };
   }
 
-  componentDidMount () {
-    console.log(this.props);
-  }
-
   handleSubmit = () => {
     this.setState({ loading: true });
     const { email, password } = this.state;

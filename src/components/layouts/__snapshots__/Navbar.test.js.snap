@@ -1,0 +1,696 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test article component Matches the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Navbar
+    message="error"
+    type="positive"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": <Container>
+        <MenuItem
+          as={[Function]}
+          header={true}
+          to="/"
+        >
+          <img
+            alt="logo"
+            src="logo.svg"
+          />
+          FAST FOOD FAST APP
+        </MenuItem>
+        <MenuMenu
+          position="right"
+        >
+          <React.Fragment>
+            <MenuItem>
+              <Button
+                as={[Function]}
+                primary={true}
+                to="/sign-up"
+              >
+                <Icon
+                  as="i"
+                  name="signup"
+                />
+                Sign up
+              </Button>
+            </MenuItem>
+            <MenuItem>
+              <Button
+                as={[Function]}
+                to="/sign-in"
+              >
+                <Icon
+                  as="i"
+                  name="sign in alternate"
+                />
+                 Log-in
+              </Button>
+            </MenuItem>
+          </React.Fragment>
+        </MenuMenu>
+      </Container>,
+      "color": "red",
+      "inverted": true,
+      "stackable": true,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <MenuItem
+            as={[Function]}
+            header={true}
+            to="/"
+          >
+            <img
+              alt="logo"
+              src="logo.svg"
+            />
+            FAST FOOD FAST APP
+          </MenuItem>,
+          <MenuMenu
+            position="right"
+          >
+            <React.Fragment>
+              <MenuItem>
+                <Button
+                  as={[Function]}
+                  primary={true}
+                  to="/sign-up"
+                >
+                  <Icon
+                    as="i"
+                    name="signup"
+                  />
+                  Sign up
+                </Button>
+              </MenuItem>
+              <MenuItem>
+                <Button
+                  as={[Function]}
+                  to="/sign-in"
+                >
+                  <Icon
+                    as="i"
+                    name="sign in alternate"
+                  />
+                   Log-in
+                </Button>
+              </MenuItem>
+            </React.Fragment>
+          </MenuMenu>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "as": [Function],
+            "children": Array [
+              <img
+                alt="logo"
+                src="logo.svg"
+              />,
+              "FAST FOOD FAST APP",
+            ],
+            "header": true,
+            "to": "/",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "logo",
+                "src": "logo.svg",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            "FAST FOOD FAST APP",
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": <React.Fragment>
+              <MenuItem>
+                <Button
+                  as={[Function]}
+                  primary={true}
+                  to="/sign-up"
+                >
+                  <Icon
+                    as="i"
+                    name="signup"
+                  />
+                  Sign up
+                </Button>
+              </MenuItem>
+              <MenuItem>
+                <Button
+                  as={[Function]}
+                  to="/sign-in"
+                >
+                  <Icon
+                    as="i"
+                    name="sign in alternate"
+                  />
+                   Log-in
+                </Button>
+              </MenuItem>
+            </React.Fragment>,
+            "position": "right",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <MenuItem>
+                  <Button
+                    as={[Function]}
+                    primary={true}
+                    to="/sign-up"
+                  >
+                    <Icon
+                      as="i"
+                      name="signup"
+                    />
+                    Sign up
+                  </Button>
+                </MenuItem>,
+                <MenuItem>
+                  <Button
+                    as={[Function]}
+                    to="/sign-in"
+                  >
+                    <Icon
+                      as="i"
+                      name="sign in alternate"
+                    />
+                     Log-in
+                  </Button>
+                </MenuItem>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <Button
+                    as={[Function]}
+                    primary={true}
+                    to="/sign-up"
+                  >
+                    <Icon
+                      as="i"
+                      name="signup"
+                    />
+                    Sign up
+                  </Button>,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "as": [Function],
+                    "children": Array [
+                      <Icon
+                        as="i"
+                        name="signup"
+                      />,
+                      "Sign up",
+                    ],
+                    "primary": true,
+                    "to": "/sign-up",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "as": "i",
+                        "name": "signup",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    "Sign up",
+                  ],
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <Button
+                    as={[Function]}
+                    to="/sign-in"
+                  >
+                    <Icon
+                      as="i"
+                      name="sign in alternate"
+                    />
+                     Log-in
+                  </Button>,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "as": [Function],
+                    "children": Array [
+                      <Icon
+                        as="i"
+                        name="sign in alternate"
+                      />,
+                      " Log-in",
+                    ],
+                    "to": "/sign-in",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "as": "i",
+                        "name": "sign in alternate",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    " Log-in",
+                  ],
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+            ],
+            "type": Symbol(react.fragment),
+          },
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <Container>
+          <MenuItem
+            as={[Function]}
+            header={true}
+            to="/"
+          >
+            <img
+              alt="logo"
+              src="logo.svg"
+            />
+            FAST FOOD FAST APP
+          </MenuItem>
+          <MenuMenu
+            position="right"
+          >
+            <React.Fragment>
+              <MenuItem>
+                <Button
+                  as={[Function]}
+                  primary={true}
+                  to="/sign-up"
+                >
+                  <Icon
+                    as="i"
+                    name="signup"
+                  />
+                  Sign up
+                </Button>
+              </MenuItem>
+              <MenuItem>
+                <Button
+                  as={[Function]}
+                  to="/sign-in"
+                >
+                  <Icon
+                    as="i"
+                    name="sign in alternate"
+                  />
+                   Log-in
+                </Button>
+              </MenuItem>
+            </React.Fragment>
+          </MenuMenu>
+        </Container>,
+        "color": "red",
+        "inverted": true,
+        "stackable": true,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <MenuItem
+              as={[Function]}
+              header={true}
+              to="/"
+            >
+              <img
+                alt="logo"
+                src="logo.svg"
+              />
+              FAST FOOD FAST APP
+            </MenuItem>,
+            <MenuMenu
+              position="right"
+            >
+              <React.Fragment>
+                <MenuItem>
+                  <Button
+                    as={[Function]}
+                    primary={true}
+                    to="/sign-up"
+                  >
+                    <Icon
+                      as="i"
+                      name="signup"
+                    />
+                    Sign up
+                  </Button>
+                </MenuItem>
+                <MenuItem>
+                  <Button
+                    as={[Function]}
+                    to="/sign-in"
+                  >
+                    <Icon
+                      as="i"
+                      name="sign in alternate"
+                    />
+                     Log-in
+                  </Button>
+                </MenuItem>
+              </React.Fragment>
+            </MenuMenu>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "as": [Function],
+              "children": Array [
+                <img
+                  alt="logo"
+                  src="logo.svg"
+                />,
+                "FAST FOOD FAST APP",
+              ],
+              "header": true,
+              "to": "/",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "alt": "logo",
+                  "src": "logo.svg",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+              "FAST FOOD FAST APP",
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": <React.Fragment>
+                <MenuItem>
+                  <Button
+                    as={[Function]}
+                    primary={true}
+                    to="/sign-up"
+                  >
+                    <Icon
+                      as="i"
+                      name="signup"
+                    />
+                    Sign up
+                  </Button>
+                </MenuItem>
+                <MenuItem>
+                  <Button
+                    as={[Function]}
+                    to="/sign-in"
+                  >
+                    <Icon
+                      as="i"
+                      name="sign in alternate"
+                    />
+                     Log-in
+                  </Button>
+                </MenuItem>
+              </React.Fragment>,
+              "position": "right",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": Array [
+                  <MenuItem>
+                    <Button
+                      as={[Function]}
+                      primary={true}
+                      to="/sign-up"
+                    >
+                      <Icon
+                        as="i"
+                        name="signup"
+                      />
+                      Sign up
+                    </Button>
+                  </MenuItem>,
+                  <MenuItem>
+                    <Button
+                      as={[Function]}
+                      to="/sign-in"
+                    >
+                      <Icon
+                        as="i"
+                        name="sign in alternate"
+                      />
+                       Log-in
+                    </Button>
+                  </MenuItem>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <Button
+                      as={[Function]}
+                      primary={true}
+                      to="/sign-up"
+                    >
+                      <Icon
+                        as="i"
+                        name="signup"
+                      />
+                      Sign up
+                    </Button>,
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "as": [Function],
+                      "children": Array [
+                        <Icon
+                          as="i"
+                          name="signup"
+                        />,
+                        "Sign up",
+                      ],
+                      "primary": true,
+                      "to": "/sign-up",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "as": "i",
+                          "name": "signup",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      "Sign up",
+                    ],
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <Button
+                      as={[Function]}
+                      to="/sign-in"
+                    >
+                      <Icon
+                        as="i"
+                        name="sign in alternate"
+                      />
+                       Log-in
+                    </Button>,
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "as": [Function],
+                      "children": Array [
+                        <Icon
+                          as="i"
+                          name="sign in alternate"
+                        />,
+                        " Log-in",
+                      ],
+                      "to": "/sign-in",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "as": "i",
+                          "name": "sign in alternate",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      " Log-in",
+                    ],
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+              ],
+              "type": Symbol(react.fragment),
+            },
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;
