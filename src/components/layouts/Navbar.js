@@ -20,8 +20,7 @@ export class Navbar extends Component {
 
           <Menu.Menu position="right">
             <Menu.Item>
-              <Button primary>
-                {" "}
+              <Button primary as={Link} to='/sign-up'>
                 <Icon name="signup" />
                 Sign up
               </Button>
