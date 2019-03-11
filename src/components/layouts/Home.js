@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import bannerImage from "../../assets/images/3a51b4c300bacca9d6ad7d22ef3b0ba6.png";
-import { Link } from "react-router-dom";
 import {
   Container,
   Button,
