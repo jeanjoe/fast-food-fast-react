@@ -1,0 +1,21 @@
+language: node_js
+
+node_js:
+  - "11.10.1"
+
+cache:
+  directories:
+    - node_modules
+
+script:
+  - npm test
+  - npm run build
+  - npm install -g codecov
+  - npm test && codecov
+
+deploy:
+  skip_cleanup: true
+  github_token: e4969fffdc5e81502b4adb7c7e587f45b70f4ea2
+  local_dir: build
+  on:
+    branch: develop
