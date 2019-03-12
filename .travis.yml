@@ -1,21 +1,30 @@
 language: node_js
 
 node_js:
-  - "11.10.1"
+  - "10"
 
 cache:
   directories:
     - node_modules
 
-script:
-  - npm test
-  - npm run build
-  - npm install -g codecov
-  - npm test && codecov
+env:
+  matrix:
+  - REACT=16.7
 
-deploy:
-  skip_cleanup: true
-  github_token: e4969fffdc5e81502b4adb7c7e587f45b70f4ea2
-  local_dir: build
-  on:
-    branch: develop
+before_script:
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
+
+script:
+  - rm -f package-lock.json && npm install
+  - npm run build
+  - npm run test -- -u --coverage
+
+after_script:
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+
+addons:
+  code_climate:
+    repo_token:
+      secure: "f0QJ+8MUc+wz8kgeil2+1dvYxLw1D5Xq1iLMHPjRQQRN+MQhov8F6WkPTyGJPXchRiy1T82l/BfzHi6CtiHEdWnZY6MVsYMRj64RXAoWIBnVtpu6iW8nSg0H061Jn+KljYMyLgocttnQy4I/guy7zRMNulOOS5NMP2guPeQ98fHU1eaZV0tPUGrxlD7ea+31m+8Y8XLqfhBPNIzIJDW/EveBf1g6SmSfqoXTwMGkWPZDWkzuJXfRGvUswfzUFCNwZBE5FRsJdy2wuCjCREp4uBaHTmVOIosy4Cixw4CHYeWzYjj53eCcuffJh5JlAmUum4TKvNmm9j+yFNzLi3zjFuAus3JGrKRW87MtvIIteSQYSPawz7CZaEQK0kQm7gY8Lt+azrAa9hPYzcrhgh6s2gtZlnwcdL0JWa+J+Y9DpVl8uDthbvVFC0BWWxKKGSD6jUeH+RmHm+F0/zRWcGV3jzSQz6RfDVFZHmKm8GykCWDsiQNu095Kw9cctvmO29FrhEXvHEUhv6vCuR/1YRPHqANtlFmaLtLsVJVyzjDqWz3yoPFnfdSDxVnHfR8ezJGoAWQ6PkgF1zi9y7QmchQTEhxSm05Evz51tVLLrD9kqRQFNv8sBrazh5f8ylwvroxjJcId+9qXsSQl9ODSmBE/+JPVtWmB5MTr5o95c7XqUPA="
