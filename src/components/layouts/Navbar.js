@@ -7,7 +7,7 @@ export class Navbar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      token: null,
+      token: null
     };
   }
 
@@ -19,7 +19,7 @@ export class Navbar extends Component {
   handleLogout = () => {
     localStorage.clear();
     window.location.href = "/";
-  }
+  };
 
   render() {
     const { token } = this.state;
@@ -32,12 +32,19 @@ export class Navbar extends Component {
           </Menu.Item>
           <Menu.Menu position="right">
             {token ? (
-              <Menu.Item>
-                <Button onClick={this.handleLogout}>
-                  <Icon name="sign-out" />
-                  Logout
-                </Button>
-              </Menu.Item>
+              <Fragment>
+                <Menu.Item>
+                  <Button onClick={this.handleLogout}>
+                    <Icon name="sign-out" />
+                    Logout
+                  </Button>
+                </Menu.Item>
+                <Menu.Item>
+                  <Button as={Link} to="/order-history">
+                    Order History
+                  </Button>
+                </Menu.Item>
+              </Fragment>
             ) : (
               <Fragment>
                 <Menu.Item>

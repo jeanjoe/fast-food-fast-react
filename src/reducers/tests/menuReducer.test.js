@@ -6,7 +6,9 @@ describe("menuReducer", () => {
       menus: [],
       errors: [],
       order: {},
-      orderError: []
+      orderError: [],
+      orderHistory: [],
+      orderHistoryError: []
     };
     expect(menuReducer(undefined, {})).toEqual(initialState);
   });
@@ -47,6 +49,26 @@ describe("menuReducer", () => {
       })).toEqual(
         {
           orderError: [{ error: "some bad error" }],
+        },
+      );
+    });
+    it("should handle GET_USER_ORDER", () => {
+      expect(menuReducer([], {
+        type: "GET_USER_ORDER",
+        payload: [{ id: 1, quantity: 5 }],
+      })).toEqual(
+        {
+          orderHistory: [{ id: 1, quantity: 5 }],
+        },
+      );
+    });
+    it("should handle GET_USER_ORDER_ERROR", () => {
+      expect(menuReducer([], {
+        type: "GET_USER_ORDER_ERROR",
+        payload: [{ error: "some bad error" }],
+      })).toEqual(
+        {
+          orderHistoryError: [{ error: "some bad error" }],
         },
       );
     });
