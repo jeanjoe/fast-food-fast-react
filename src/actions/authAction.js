@@ -1,6 +1,7 @@
 import axios from "axios";
 import { GET_USER_MENU, GET_USER_MENU_ERROR } from "../utilities/actionTypes";
 const baseUrl = "https://manzede-fast-food-fast-3.herokuapp.com/api/v1/users/";
+const token = localStorage.getItem("auth_token");
 
 export const registerUser = data => dispatch => {
   axios
@@ -44,9 +45,6 @@ export const loginUser = data => dispatch => {
       });
     });
 };
-
-const token = localStorage.getItem("auth_token");
-// const url = "https://manzede-fast-food-fast-3.herokuapp.com/api/v1/";
 
 export const getMenus = () => dispatch => {
   axios

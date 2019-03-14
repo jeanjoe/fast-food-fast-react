@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Form, Button, Header, Icon } from "semantic-ui-react";
+import { Form, Button, Header, Icon, Input } from "semantic-ui-react";
 
 import Alert from "../notifications/Alert";
 
@@ -24,24 +24,22 @@ const SignInForm = ({
         ""
       )}
       {loginSuccess ? <Alert message={loginSuccess} type="positive" /> : ""}
-      <Form.Field>
-        <label>Email</label>
-        <input
-          placeholder="login email"
-          name="email"
-          type="email"
-          onChange={handleOnChange}
-        />
-      </Form.Field>
-      <Form.Field>
-        <label>Password</label>
-        <input
-          placeholder="********"
-          name="password"
-          type="password"
-          onChange={handleOnChange}
-        />
-      </Form.Field>
+      <Form.Field
+        label="Email"
+        onChange={handleOnChange}
+        name="email"
+        control={Input}
+        type="email"
+        placeholder="login Email"
+      />
+      <Form.Field
+        label="Password"
+        onChange={handleOnChange}
+        name="password"
+        control={Input}
+        type="password"
+        placeholder="*******"
+      />
       <Form.Field style={{ margin: "1em 0em" }}>
         <Button type="submit" color="red" fluid>
           {loading ? (
