@@ -36,28 +36,22 @@ ShallowWrapper {
           type="negative"
         />,
         "",
-        <FormField>
-          <label>
-            Email
-          </label>
-          <input
-            name="email"
-            onChange={[MockFunction]}
-            placeholder="login email"
-            type="email"
-          />
-        </FormField>,
-        <FormField>
-          <label>
-            Password
-          </label>
-          <input
-            name="password"
-            onChange={[MockFunction]}
-            placeholder="********"
-            type="password"
-          />
-        </FormField>,
+        <FormField
+          control={[Function]}
+          label="Email"
+          name="email"
+          onChange={[MockFunction]}
+          placeholder="login Email"
+          type="email"
+        />,
+        <FormField
+          control={[Function]}
+          label="Password"
+          name="password"
+          onChange={[MockFunction]}
+          placeholder="*******"
+          type="password"
+        />,
         <FormField
           style={
             Object {
@@ -117,46 +111,15 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "children": Array [
-            <label>
-              Email
-            </label>,
-            <input
-              name="email"
-              onChange={[MockFunction]}
-              placeholder="login email"
-              type="email"
-            />,
-          ],
+          "control": [Function],
+          "label": "Email",
+          "name": "email",
+          "onChange": [MockFunction],
+          "placeholder": "login Email",
+          "type": "email",
         },
         "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Email",
-            },
-            "ref": null,
-            "rendered": "Email",
-            "type": "label",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "name": "email",
-              "onChange": [MockFunction],
-              "placeholder": "login email",
-              "type": "email",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "input",
-          },
-        ],
+        "rendered": null,
         "type": [Function],
       },
       Object {
@@ -164,46 +127,15 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "children": Array [
-            <label>
-              Password
-            </label>,
-            <input
-              name="password"
-              onChange={[MockFunction]}
-              placeholder="********"
-              type="password"
-            />,
-          ],
+          "control": [Function],
+          "label": "Password",
+          "name": "password",
+          "onChange": [MockFunction],
+          "placeholder": "*******",
+          "type": "password",
         },
         "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Password",
-            },
-            "ref": null,
-            "rendered": "Password",
-            "type": "label",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "name": "password",
-              "onChange": [MockFunction],
-              "placeholder": "********",
-              "type": "password",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "input",
-          },
-        ],
+        "rendered": null,
         "type": [Function],
       },
       Object {
@@ -308,28 +240,22 @@ ShallowWrapper {
             type="negative"
           />,
           "",
-          <FormField>
-            <label>
-              Email
-            </label>
-            <input
-              name="email"
-              onChange={[MockFunction]}
-              placeholder="login email"
-              type="email"
-            />
-          </FormField>,
-          <FormField>
-            <label>
-              Password
-            </label>
-            <input
-              name="password"
-              onChange={[MockFunction]}
-              placeholder="********"
-              type="password"
-            />
-          </FormField>,
+          <FormField
+            control={[Function]}
+            label="Email"
+            name="email"
+            onChange={[MockFunction]}
+            placeholder="login Email"
+            type="email"
+          />,
+          <FormField
+            control={[Function]}
+            label="Password"
+            name="password"
+            onChange={[MockFunction]}
+            placeholder="*******"
+            type="password"
+          />,
           <FormField
             style={
               Object {
@@ -389,46 +315,15 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "children": Array [
-              <label>
-                Email
-              </label>,
-              <input
-                name="email"
-                onChange={[MockFunction]}
-                placeholder="login email"
-                type="email"
-              />,
-            ],
+            "control": [Function],
+            "label": "Email",
+            "name": "email",
+            "onChange": [MockFunction],
+            "placeholder": "login Email",
+            "type": "email",
           },
           "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Email",
-              },
-              "ref": null,
-              "rendered": "Email",
-              "type": "label",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "name": "email",
-                "onChange": [MockFunction],
-                "placeholder": "login email",
-                "type": "email",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "input",
-            },
-          ],
+          "rendered": null,
           "type": [Function],
         },
         Object {
@@ -436,46 +331,15 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "children": Array [
-              <label>
-                Password
-              </label>,
-              <input
-                name="password"
-                onChange={[MockFunction]}
-                placeholder="********"
-                type="password"
-              />,
-            ],
+            "control": [Function],
+            "label": "Password",
+            "name": "password",
+            "onChange": [MockFunction],
+            "placeholder": "*******",
+            "type": "password",
           },
           "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Password",
-              },
-              "ref": null,
-              "rendered": "Password",
-              "type": "label",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "name": "password",
-                "onChange": [MockFunction],
-                "placeholder": "********",
-                "type": "password",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "input",
-            },
-          ],
+          "rendered": null,
           "type": [Function],
         },
         Object {

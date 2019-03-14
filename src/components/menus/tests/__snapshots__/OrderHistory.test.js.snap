@@ -70,10 +70,7 @@ ShallowWrapper {
           </BreadcrumbSection>
         </Breadcrumb>,
         "",
-        <Alert
-          message="You have no order History..."
-          type="negative"
-        />,
+        "",
         <Alert
           message="We are fetching your order history...."
           type="positive"
@@ -185,18 +182,7 @@ ShallowWrapper {
         "type": [Function],
       },
       "",
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "message": "You have no order History...",
-          "type": "negative",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
+      "",
       Object {
         "instance": null,
         "key": undefined,
@@ -251,10 +237,7 @@ ShallowWrapper {
             </BreadcrumbSection>
           </Breadcrumb>,
           "",
-          <Alert
-            message="You have no order History..."
-            type="negative"
-          />,
+          "",
           <Alert
             message="We are fetching your order history...."
             type="positive"
@@ -366,18 +349,7 @@ ShallowWrapper {
           "type": [Function],
         },
         "",
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "message": "You have no order History...",
-            "type": "negative",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
+        "",
         Object {
           "instance": null,
           "key": undefined,

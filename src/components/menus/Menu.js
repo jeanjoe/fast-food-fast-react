@@ -22,9 +22,9 @@ export class Menu extends Component {
 
   componentDidMount() {
     const { getMenus } = this.props;
-    if (localStorage.getItem("auth_token")) {
-      getMenus();
-    } else this.props.history.push("/sign-in");
+    localStorage.getItem("auth_token")
+      ? getMenus()
+      : this.props.history.push("/sign-in");
   }
 
   handleOnChange = event => {
@@ -51,8 +51,11 @@ export class Menu extends Component {
     this.setState({ loading: false, ordering: false });
     if (nextProps.menus.menus) {
       this.setState({ menus: nextProps.menus.menus });
-    } else if (nextProps.error.response.status === 401) {
-      this.props.history.push("/sign-in");
+    }
+    if (nextProps.error.response) {
+      if (nextProps.error.response.status === 401) {
+        this.props.history.push("/sign-in");
+      }
     }
     if (nextProps.order.data === "Order Inserted Successfully") {
       this.setState({ orderSuccess: nextProps.order.data });

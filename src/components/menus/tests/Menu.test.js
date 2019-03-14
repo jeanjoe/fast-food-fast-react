@@ -58,37 +58,64 @@ describe("Test article component", () => {
 
   it("Handle componentWillReceiveProps", () => {
     const nextProps = {
-        menus: {
-            menus: [
-                {
-                    id: 1,
-                    title: 'test title',
-                    description: 'test description',
-                    price: 1000,
-                }
-            ]
-        },
-        order: {},
-        orderError: {}
+      menus: {
+        menus: [
+          {
+            id: 1,
+            title: "test title",
+            description: "test description",
+            price: 1000
+          }
+        ]
+      },
+      order: {},
+      error: {
+        response: {}
+      },
+      orderError: {}
     };
     wrapper.instance().componentWillReceiveProps(nextProps);
-    expect(wrapper.state('menus')).toEqual(nextProps.menus.menus);
+    expect(wrapper.state("menus")).toEqual(nextProps.menus.menus);
   });
-
 
   it("Handle componentWillReceiveProps on unauthorizes", () => {
     const nextProps = {
-        menus: {
-            menus: []
-        },
-        order: {},
-        orderError: {
-            response: {
-                status: 401,
-            }
+      menus: {
+        menus: []
+      },
+      order: {},
+      error: {
+        response: {
+          status: 401
         }
+      },
+      orderError: {
+        response: {
+          status: 401
+        }
+      }
     };
     wrapper.instance().componentWillReceiveProps(nextProps);
     expect(props.history.push).toHaveBeenCalled();
+  });
+  it("Handle componentWillReceiveProps when order is inserted", () => {
+    const nextProps = {
+      menus: {
+        menus: []
+      },
+      order: {
+        data: "Order Inserted Successfully"
+      },
+      error: {
+        response: {}
+      },
+      orderError: {
+        response: {}
+      }
+    };
+    wrapper.instance().componentWillReceiveProps(nextProps);
+    expect(wrapper.state("orderSuccess")).toEqual(
+      "Order Inserted Successfully"
+    );
   });
 });
