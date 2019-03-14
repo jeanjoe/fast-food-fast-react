@@ -37,7 +37,8 @@ export class SignIn extends Component {
     this.setState({ loading: false, loginError: null });
     if (nextProps.user.message === "Login successfully") {
       this.setState({
-        loginSuccess: "Login successful, Redirecting you..."
+        loginSuccess: "Login successful, Redirecting you...",
+        loginError: null
       });
       localStorage.setItem("auth_token", nextProps.user.user_token);
       window.location.href = "/";
